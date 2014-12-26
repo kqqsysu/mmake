@@ -6,7 +6,7 @@ Usage:
 erl -pa ebin -eval "case make:files([\"src/mmake.erl\"], [{outdir, \"ebin\"}]) of error -> halt(1); _ -> ok end" -eval "case mmake:all(8,[$(MAKE_OPTS)]) of up_to_date -> halt(0); error -> halt(1) end."
 
 EMakefile:
-{"deps/*", [{i, "include}, {outdir, "ebin"}]}.  
-{["src/*"], [{i, "include}, {outdir, "ebin"}]}.  
+
+{"deps/*", [{i, "include}, {outdir, "ebin"}]}.  {["src/*"], [{i, "include}, {outdir, "ebin"}]}.  
 
 参考 https://github.com/litaocheng/mmake
