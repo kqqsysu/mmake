@@ -7,6 +7,6 @@ erl -pa ebin -eval "case make:files([\"src/mmake.erl\"], [{outdir, \"ebin\"}]) o
 
 EMakefile:
 {"deps/*", [{i, "include}, {outdir, "ebin"}]}.  
-{["src/*"], [{i, "include}, {outdir, "ebin"}]}.  
+{["src/*"], [{i, "include}, {outdir, "ebin"}]}.   
 
 参考 https://github.com/litaocheng/mmake
